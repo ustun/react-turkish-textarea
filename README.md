@@ -80,7 +80,9 @@ var MyComponent = React.createClass({
 Bu kod arkaplanda Deniz Yüret'in Emacs icin yazdığı eklentiyi JavaScript'e
 çeviren Mustafa Emre Acer'in Turkish Deasciifier kodunu React bileşeniyle
 entegre etmektedir. Deasciifier hakkında ayrıntılı bilgi için:
-http://www.denizyuret.com/2006/11/emacs-turkish-mode.html
+
+- http://www.denizyuret.com/2006/11/emacs-turkish-mode.html
+- http://www.deasciifier.com/
 
 ## Scripts
 
