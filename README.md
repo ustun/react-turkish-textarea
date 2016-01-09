@@ -15,7 +15,7 @@ npm install turkish-deasciifier --save
 Daha sonra `react-turkish-textarea` paketini kurun.
 
 ```shell
-npm install react-turkish-textarea
+npm install react-turkish-textarea --save
 ```
 
 
@@ -73,9 +73,9 @@ var MyComponent = React.createClass({
 
 ## Nasıl Çalışır?
 
-Bu kod arkaplanda Deniz Yüret'in Emacs ıcın yazdığı eklentiyi JavaScript'e
-çeviren Mustafa Emre Acer'in Turkish Deasçııfıer kodunu React bileşeniyle
-entegre etmektedir. Deasçııfıer hakkında ayrıntılı bilgi için:
+Bu kod arkaplanda Deniz Yüret'in Emacs icin yazdığı eklentiyi JavaScript'e
+çeviren Mustafa Emre Acer'in Turkish Deasciifier kodunu React bileşeniyle
+entegre etmektedir. Deasciifier hakkında ayrıntılı bilgi için:
 http://www.denizyuret.com/2006/11/emacs-turkish-mode.html
 
 ## Scripts
