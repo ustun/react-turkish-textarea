@@ -78,11 +78,16 @@ var MyComponent = React.createClass({
 ## Nasıl Çalışır?
 
 Bu kod arkaplanda [Dr. Deniz Yüret](http://www.denizyuret.com/)'in Emacs icin yazdığı eklentiyi JavaScript'e
-çeviren [Mustafa Emre Acer](http://www.mustafaacer.com/)'in Turkish Deasciifier kodunu React bileşeniyle
+çeviren [Mustafa Emre Acer](http://www.mustafaacer.com/)'in [Turkish Deasciifier](https://github.com/meacer/deasciifier/) kodunu React bileşeniyle
 entegre etmektedir. Deasciifier hakkında ayrıntılı bilgi için:
 
 - http://www.denizyuret.com/2006/11/emacs-turkish-mode.html
 - http://www.deasciifier.com/
+
+## npm'deki turkish-deasciifier paketi
+- Kodun orijinali: https://github.com/meacer/deasciifier/
+- Mac OS X servisi hali: https://github.com/f/deasciifier
+- npm'deki kütüphanesi: https://github.com/ustun/turkish-deasciifier
 
 ## Scripts
 
