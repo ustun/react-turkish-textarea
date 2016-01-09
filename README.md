@@ -4,11 +4,28 @@
 
 Örneğin İngilizce karakterlerle Ustun Ozgur yazdığınızda bunu Üstün Özgür olarak düzeltir.
 
+## Kurulum
+
+Önce gereksinimleri kurun. (Bu paketler peer dependency olduğu için npm 3'ten itibaren otomatik olarak kurulmayacaklar.)
+
+```shell
+npm install react --save
+npm install turkish-deasciifier --save
+```
+Daha sonra `react-turkish-textarea` paketini kurun.
+
+```shell
+npm install react-turkish-textarea
+```
+
+
 ## Kullanım
+
+
+```js
 
 var TurkishTextArea = require('react-turkish-textarea');
 
-```js
 var MyComponent = React.createClass({
 
   render: function () {
@@ -25,7 +42,7 @@ var MyComponent = React.createClass({
 });
 ```
 
-Normal bir textarea bilesenine aktarabilen tum ozellikler TurkishTextarea bilesenine de aktarilabilir.
+Normal bir textarea bileşenine aktarabilen tüm özellikler TurkishTextarea bileşenine de aktarılabilir.
 
 ```js
 var MyComponent = React.createClass({
@@ -49,6 +66,17 @@ var MyComponent = React.createClass({
 });
 
 ```
+
+## Örnekler
+
+Örnek bir kullanım için example/ klasörüne göz atabilirsiniz.
+
+## Nasıl Çalışır?
+
+Bu kod arkaplanda Deniz Yüret'in Emacs ıcın yazdığı eklentiyi JavaScript'e
+çeviren Mustafa Emre Acer'in Turkish Deasçııfıer kodunu React bileşeniyle
+entegre etmektedir. Deasçııfıer hakkında ayrıntılı bilgi için:
+http://www.denizyuret.com/2006/11/emacs-turkish-mode.html
 
 ## Scripts
 
