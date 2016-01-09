@@ -3,6 +3,12 @@ import Deasciifier from 'turkish-deasciifier';
 
 const deascii = new Deasciifier();
 
+deascii.correctWithRange = function(text, end){
+    var end = end ? end : text.length;
+    while(text.charAt(--end) == ' ');
+    return this.deasciifyRange(text, text.lastIndexOf(' ', end - 1), end);
+}
+
 const TurkishTextArea = React.createClass({
 
     getDefaultProps() {
@@ -47,7 +53,8 @@ const TurkishTextArea = React.createClass({
             return;
         }
 
-        const turkishValue = deascii.turkish_correct_last_word(e.target.value);
+        const end = e.target.selectionEnd, turkishValue = deascii.correctWithRange(e.target.value);
+        e.target.selectionEnd = end;
 
         if (this.props.onChange) {
             e.target.value = turkishValue;
