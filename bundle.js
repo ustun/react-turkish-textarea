@@ -64,17 +64,23 @@
 	    displayName: 'MyComponent',
 	
 	    render: function render() {
+	        var code = '<TurkishTextArea/>';
 	        return _react2.default.createElement(
 	            'div',
 	            null,
 	            _react2.default.createElement(
 	                'h1',
 	                null,
-	                'Ornek form'
+	                'Örnek: Basit kullanım'
 	            ),
 	            _react2.default.createElement(
 	                'form',
 	                null,
+	                _react2.default.createElement(
+	                    'pre',
+	                    null,
+	                    code
+	                ),
 	                _react2.default.createElement(_reactTurkishTextarea2.default, null)
 	            )
 	        );
@@ -93,17 +99,24 @@
 	    },
 	
 	    render: function render() {
+	        var doc = '\nconst MyComponent2 = React.createClass({\n\n    getInitialState() {\n        return {value: \'\'};\n    },\n\n    onChange(e) {\n        this.setState({value: e.target.value.toUpperCase()});\n    },\n\n    render: function () {\n       return <form>\n                <TurkishTextArea\n                  style={{color: \'red\'}}\n                  onChange={this.onChange}\n                  value={this.state.value}/>\n\n                Using external state: {this.state.value}\n                </form>\n        );\n\n    }\n});\n';
+	
 	        return _react2.default.createElement(
 	            'div',
 	            null,
 	            _react2.default.createElement(
 	                'h1',
 	                null,
-	                'Ornek form'
+	                'Örnek: Girilen değer dışarıdaki bileşende büyük harfe dönüştürülerek saklanır, özel stil.'
 	            ),
 	            _react2.default.createElement(
 	                'form',
 	                null,
+	                _react2.default.createElement(
+	                    'pre',
+	                    null,
+	                    doc
+	                ),
 	                _react2.default.createElement(_reactTurkishTextarea2.default, { style: { color: 'red' }, onChange: this.onChange, value: this.state.value }),
 	                'Using external state: ',
 	                this.state.value
@@ -113,6 +126,45 @@
 	});
 	
 	_reactDom2.default.render(_react2.default.createElement(MyComponent2, null), document.getElementById('app-2'));
+	
+	var MyComponent3 = _react2.default.createClass({
+	    displayName: 'MyComponent3',
+	    getInitialState: function getInitialState() {
+	        return { value: '' };
+	    },
+	    onChange: function onChange(e) {
+	        this.setState({ value: e.target.value.toUpperCase() });
+	    },
+	
+	    render: function render() {
+	        var code = '\n                <TurkishTextArea\n                 showToggleButtonForCorrectionOnChange={false}\n                 showToggleButtonForCorrectionOnPaste={false}\n                 showButtonForManualCorrection={false}\n                 />';
+	        return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Örnek 3: Kontrolleri gizle'
+	            ),
+	            _react2.default.createElement(
+	                'form',
+	                null,
+	                _react2.default.createElement(
+	                    'pre',
+	                    null,
+	                    code
+	                ),
+	                _react2.default.createElement(_reactTurkishTextarea2.default, {
+	                    showToggleButtonForCorrectionOnChange: false,
+	                    showToggleButtonForCorrectionOnPaste: false,
+	                    showButtonForManualCorrection: false
+	                })
+	            )
+	        );
+	    }
+	});
+	
+	_reactDom2.default.render(_react2.default.createElement(MyComponent3, null), document.getElementById('app-3'));
 
 /***/ },
 /* 1 */
