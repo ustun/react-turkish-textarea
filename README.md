@@ -6,7 +6,7 @@
 
 ## Demo
 
-http://ustun.github.io/react-turkish-textarea
+http://ustunozgur.com/react-turkish-textarea/
 
 ## Kurulum
 
