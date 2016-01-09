@@ -4,6 +4,10 @@
 
 Örneğin İngilizce karakterlerle Ustun Ozgur yazdığınızda bunu Üstün Özgür olarak düzeltir.
 
+## Demo
+
+http://blog.ustunozgur.com/react-turkish-textarea/
+
 ## Kurulum
 
 Önce gereksinimleri kurun. (Bu paketler peer dependency olduğu için npm 3'ten itibaren otomatik olarak kurulmayacaklar.)
