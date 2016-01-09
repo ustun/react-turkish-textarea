@@ -54,7 +54,6 @@ const TurkishTextArea = React.createClass({
         }
 
         const end = e.target.selectionEnd, turkishValue = deascii.correctWithRange(e.target.value);
-        e.target.selectionEnd = end;
 
         if (this.props.onChange) {
             e.target.value = turkishValue;
@@ -62,6 +61,7 @@ const TurkishTextArea = React.createClass({
         } else {
             this.setValue(turkishValue);
         }
+        e.target.selectionEnd = end;
     },
 
     onPaste(e) {
